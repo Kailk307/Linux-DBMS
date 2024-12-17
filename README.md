@@ -35,8 +35,8 @@ Dự án này triển khai một hệ thống quản lý dữ liệu MySQL trên
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 - Chèn dữ liệu vào bảng nhân viên
-# INSERT INTO employees (name, position, salary) 
-# VALUES ('Nguyen Van A', 'Manager', 1500.00),
+# INSERT INTO employees (name, position, salary) VALUES
+       ('Nguyen Van A', 'Manager', 1500.00),
        ('Tran Thi B', 'Developer', 1200.00),
        ('Le Van C', 'Tester', 1000.00);
 4. Tăng cường bảo mật MySQL
