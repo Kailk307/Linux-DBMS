@@ -24,25 +24,25 @@ Dự án này triển khai một hệ thống quản lý dữ liệu MySQL trên
 - Đăng nhập vào MySQL:
  # sudo mysql -u root -p
 - Tạo một cơ sở dữ liệu mới và bảng nhân viên:
-#  CREATE DATABASE employee_db;
-USE employee_db;
+# CREATE DATABASE employee_db;
+# USE employee_db;
 
-CREATE TABLE employees (
+# CREATE TABLE employees (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100),
     position VARCHAR(50),
     salary DECIMAL(10, 2),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
-INSERT INTO employees (name, position, salary) 
-VALUES ('Nguyen Van A', 'Manager', 1500.00),
+- Chèn dữ liệu vào bảng nhân viên
+# INSERT INTO employees (name, position, salary) 
+# VALUES ('Nguyen Van A', 'Manager', 1500.00),
        ('Tran Thi B', 'Developer', 1200.00),
        ('Le Van C', 'Tester', 1000.00);
 4. Tăng cường bảo mật MySQL
 - Cấu hình tường lửa (UFW) để chỉ cho phép cổng 3306 kết nối từ localhost:
 # sudo ufw allow 3306
- # sudo ufw enable
+# sudo ufw enable
 - Cấu hình user và cấp quyền cụ thể:
 # CREATE USER 'admin'@'localhost' IDENTIFIED BY 'password123';
 # GRANT ALL PRIVILEGES ON employee_db.* TO 'admin'@'localhost';
