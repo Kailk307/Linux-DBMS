@@ -10,12 +10,12 @@ Dự án này triển khai một hệ thống quản lý dữ liệu MySQL trên
 - Sử dụng Ubuntu Server 20.04 LTS làm hệ điều hành
 - Link download: https://releases.ubuntu.com/focal/
 - Cập nhật hệ thống:
-#sudo apt update && sudo apt upgrade -y
+# sudo apt update && sudo apt upgrade -y
 - Cài đặt các gói cần thiết (nano, curl, firewall):
-#sudo apt install nano ufw wget -y
+# sudo apt install nano ufw wget -y
 2. Cài đặt và cấu hình MySQL
 - Cài đặt MySQL:
- # sudo apt install mysql-server -y
+  # sudo apt install mysql-server -y
 - Kiểm tra dịch vụ MySQL:
   # sudo systemctl status mysql
 - Đặt mật khẩu root MySQL và bảo mật MySQL:
